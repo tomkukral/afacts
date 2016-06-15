@@ -10,7 +10,7 @@ This role provides advanced ansible facts. It creates file `/etc/ansible/facts.d
 
 == Provided information
 
-* Disk information
+* Disks
 
 ** Capacity
 ** Serial number
