@@ -2,7 +2,17 @@
 
 This role provides advances ansible facts. It creates file `/etc/ansible/facts.d/afacts.fact`.
 
+== Configuration
+
+* `afacts_rewrite` - rewrite existing file
+
 
 == Provided information
 
 * Disk information
+
+** Capacity
+** Serial number
+** Device model
+** Firmware
+** Rotation rate

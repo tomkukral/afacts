@@ -1,0 +1,7 @@
+- name: create directory for facts
+  file:
+    path: /etc/ansible/facts.d/
+    state: directory
+
+- name: copy afacts.fact template
+  template: src=easyshift.fact dest=/etc/ansible/facts.d/ force={{afacts_rewrite}}
