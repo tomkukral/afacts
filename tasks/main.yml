@@ -4,4 +4,8 @@
     state: directory
 
 - name: copy afacts.fact template
-  template: src=easyshift.fact dest=/etc/ansible/facts.d/ force={{afacts_rewrite}}
+  template: src=afacts.fact dest=/etc/ansible/facts.d/ force={{afacts_rewrite}}
+
+- name: regather facts
+  setup:
+  when: afacts_regather
