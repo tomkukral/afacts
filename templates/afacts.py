@@ -2,6 +2,7 @@
 
 import re
 import json
+import datetime
 import subprocess
 
 # define smart parameters to read
@@ -14,7 +15,8 @@ smart_params = [
 
 # init output data
 data = {
-    'disks': {}
+    'disks': {},
+    'timestamp': datetime.datetime.utcnow().isoformat()
 }
 
 # disks
