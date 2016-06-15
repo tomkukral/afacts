@@ -2,7 +2,6 @@
 
 import re
 import json
-import socket
 import subprocess
 
 # define smart parameters to read
@@ -17,9 +16,6 @@ smart_params = [
 data = {
 	'disks': {}
 }
-
-# get hostname
-data['hostname'] = socket.gethostname()
 
 # disks
 proc_fdisk = subprocess.Popen(['fdisk', '-l'], stdout=subprocess.PIPE)
