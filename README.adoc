@@ -17,3 +17,32 @@ This role provides advanced ansible facts. It creates file `/etc/ansible/facts.d
 ** Device model
 ** Firmware
 ** Rotation rate
+
+== Example output
+
+----
+{
+    "disks": {
+        "sda": {
+            "capacity": "4000.8 GB",
+            "name": "sda",
+            "smart": {
+                "firmware": "FL1A",
+                "model": "TOSHIBA MG03ACA400",
+                "rpm": "7200 rpm",
+                "serial": "X5ABCDEFG"
+            }
+        },
+        "sdb": {
+            "capacity": "4000.8 GB",
+            "name": "sdb",
+            "smart": {
+                "firmware": "FL1A",
+                "model": "TOSHIBA MG03ACA400",
+                "rpm": "7200 rpm",
+                "serial": "X51234567"
+            }
+        }
+    }
+}
+----
