@@ -3,8 +3,16 @@
     path: /etc/ansible/facts.d/
     state: directory
 
-- name: copy afacts.fact template
-  template: src=afacts.fact dest=/etc/ansible/facts.d/ force={{afacts_rewrite}}
+- name: copy afacts.py
+  template: src=afacts.py dest=/etc/ansible/facts.d/ mode=0750
+
+- name: check if afacts.fact exists
+  stat: path=/etc/ansible/facts.d/afacts.fact
+  register: afacts_file
+
+- name: generate afacts
+  shell: /etc/ansible/facts.d/afacts.py > /etc/ansible/facts.d/afacts.fact
+  when: not afacts_file.stat.exists or afacts_rewrite
 
 - name: regather facts
   setup:

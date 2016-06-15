@@ -1,2 +1,2 @@
-afacts_rewrite: no
-afacts_regather: false
+afacts_rewrite: False
+afacts_regather: False
