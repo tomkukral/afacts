@@ -13,6 +13,7 @@ This role provides advanced ansible facts. It creates file `/etc/ansible/facts.d
 * General
 
 ** timestamp
+** IPMI FRU
 
 * Disks
 
@@ -49,6 +50,20 @@ This role provides advanced ansible facts. It creates file `/etc/ansible/facts.d
                 "serial": "X51234567"
             }
         }
-    }
+    },
+    "ipmi": {
+        "Board Mfg": "Supermicro",
+        "Board Mfg Date": "Mon Jan  1 01:00:00 1996",
+        "Board Serial": "VM12349ABCDE",
+        "Chassis Part Number": "CAS ABCDETQ-R740ABC",
+        "Chassis Serial": "ABCDELKJFD89994",
+        "Chassis Type": "Unspecified",
+        "FRU Device Description": "Builtin FRU Device (ID 0)",
+        "Product Manufacturer": "Manufacturer, s.r.o. - servis@manufacturere.cz",
+        "Product Name": "PCS S121212X10+ SYS",
+        "Product Serial": "VR10982102"
+    },
+    "timestamp": "2016-06-15T15:18:08.065678"
+
 }
 ----
