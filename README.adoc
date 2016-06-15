@@ -5,6 +5,7 @@ This role provides advances ansible facts. It creates file `/etc/ansible/facts.d
 == Configuration
 
 * `afacts_rewrite` - rewrite existing file
+* `afacts_regather` - regather facts
 
 
 == Provided information
