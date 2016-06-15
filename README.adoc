@@ -1,0 +1,8 @@
+= Advances Ansible facts
+
+This role provides advances ansible facts. It creates file `/etc/ansible/facts.d/afacts.fact`.
+
+
+== Provided information
+
+* Disk information
