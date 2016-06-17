@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 import re
 import json
@@ -54,4 +54,4 @@ for ipmi_line in ipmi_proc.stdout:
         data['ipmi'][ipmi_sek.group(1)] = ipmi_sek.group(2)
 
 # print output
-print json.dumps(data, sort_keys=True, indent=4)
+print(json.dumps(data))
