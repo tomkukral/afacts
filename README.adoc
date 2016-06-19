@@ -1,4 +1,4 @@
-= Advances Ansible facts
+= Advanced Ansible facts
 
 This role provides advanced ansible facts. It creates file `/etc/ansible/facts.d/afacts.fact`.
 
